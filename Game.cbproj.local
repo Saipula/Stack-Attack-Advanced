@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.241,C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit1.h=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\map.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.241,C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit1.cpp=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\map.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.641,=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.279,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.289,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.279,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.958,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit2.h=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\class.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.941,C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Project1PCH1.h=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\GamePCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.089,=C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.872,=C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.958,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\class.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.497,C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit2.cpp=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\info.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.187,=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.497,C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit2.dfm=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\info.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.279,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.791,=C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.497,C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Unit2.h=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\info.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.009,C:\Users\Персик\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\Персик\Documents\Курсачи\Stack Attack Advanced\Game.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
