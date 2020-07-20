@@ -3,7 +3,7 @@ object Form2: TForm2
   Top = 165
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = #1048#1085#1092#1086#1088#1084#1072#1094#1080#1103
+  Caption = 'Information'
   ClientHeight = 218
   ClientWidth = 258
   Color = clBtnFace
@@ -29,13 +29,11 @@ object Form2: TForm2
     Font.Style = [fsBold]
     ItemHeight = 31
     Items.Strings = (
-      'Space - '#1087#1072#1091#1079#1072
-      'W - '#1087#1088#1080#1078#1086#1082
-      'A - '#1080#1076#1090#1080' '#1074#1083#1086#1074#1086
-      'D - '#1080#1076#1090#1080' '#1074#1087#1088#1072#1086)
+      'Space - pause'
+      'W - jump'
+      'A - go left'
+      'D - go right')
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 514
-    ExplicitHeight = 305
   end
 end

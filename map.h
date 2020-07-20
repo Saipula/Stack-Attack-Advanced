@@ -5,7 +5,6 @@
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
-#include <ctime>
 
 //---------------------------------------------------------------------------
 class Map {

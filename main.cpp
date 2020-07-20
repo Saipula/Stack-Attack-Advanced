@@ -9,6 +9,7 @@
 
 #include <pngimage.hpp>
 #include <jpeg.hpp>
+#include <ctime>
 // ---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -19,21 +20,25 @@ TCanvas *canv;  //Дополнительный буффер, чтобы задний фон игрового поля был проз
 
 // ---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner) {
+	srand(time(NULL));
+
 	TJPEGImage *tmpJ = new TJPEGImage();
 	tmpJ->LoadFromFile("Images\\fon.jpg");
 	fon->Align = alClient;
 	//fon->Stretch = true;   //Сзачие картинки
 	fon->Picture->Bitmap->Assign(tmpJ);
-    delete tmpJ;
+	delete tmpJ;
+
+	Buffer->Align = alClient;
 
 	game = new Game(Buffer->Canvas);
-	Label1->Caption = "\tВремя: " + String((int)game->timeInGame);
-	Label2->Caption = "Очки: " + String(game->score);
-	Misia1->Caption = "\tМиссия " + String(game->misiaNum) + ": "
+	Label1->Caption = "\tTime: " + String((int)game->timeInGame);
+	Label2->Caption = "Score: " + String(game->score);
+	Misia1->Caption = "\tMission " + String(game->misiaNum) + ": "
 		+ String(game->misia);
 
 	canv = new TCanvas();
-    canv = fon->Canvas;
+    canv = fon->Picture->Bitmap->Canvas;
 }
 
 // -----------Кнопка Старт-----------------------------------------------------
@@ -47,10 +52,10 @@ void __fastcall TForm1::Timer1Timer(TObject *Sender) {
 	//Если хотя бы из кубов не достиг верха, или персонаж умер
 	if (game->map->proverka_first() || !game->player->isLife) {
 		Timer1->Enabled = false;  //Обновление поля останавливается
-		ShowMessage("Вы проиграли!\nВремя: " + String((int)game->timeInGame)
-		+ "\nОчки: " + String(game->score)); //Вылетает сообщение
+		ShowMessage("You lost!\nTime: " + String((int)game->timeInGame)
+		+ "\nScore: " + String(game->score)); //Вылетает сообщение
 		game->restart();  //И у персонажа ставится позиция в центре поля
-		Misia1->Caption = "\tМиссия " + String(game->misiaNum) + ": "
+		Misia1->Caption = "\tMission " + String(game->misiaNum) + ": "
 			+ String(game->misia);
 	}
 	else{
@@ -59,15 +64,15 @@ void __fastcall TForm1::Timer1Timer(TObject *Sender) {
 
 	if (game->misia <= game->score) {
 		Timer1->Enabled = false;  //Обновление поля останавливается
-		ShowMessage("Вы победили!\nВремя: " + String((int)game->timeInGame)
-		+ "\nОчки: " + String(game->score)); //Вылетает сообщение
+		ShowMessage("You win!\nTime " + String((int)game->timeInGame)
+		+ "\nScore: " + String(game->score)); //Вылетает сообщение
 		game->restart();  //И у персонажа ставится позиция в центре поля
-		Misia1->Caption = "\tМиссия " + String(game->misiaNum) + ": "
+		Misia1->Caption = "\tMission " + String(game->misiaNum) + ": "
 			+ String(game->misia);
 	}
 
-	Label1->Caption = "\tВремя: " + String((int)game->timeInGame);
-	Label2->Caption = "Очки: " + String(game->score);
+	Label1->Caption = "\tTime: " + String((int)game->timeInGame);
+	Label2->Caption = "Score: " + String(game->score);
 
 	//Даблбуффер (Чтобы картинка не мерцала)
 	this->Canvas->CopyRect(game->MyRect, Buffer->Canvas, game->MyRect);

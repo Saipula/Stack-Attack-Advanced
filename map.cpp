@@ -57,8 +57,6 @@ void Map::draw() {
 
 // Обновление
 void Map::update() {
-	srand(time(NULL));
-
 	if (proverka_last()){ //Если последний ряд полон, он очищается
 		for (int i = 1; i < aW-1; i++) {
 			int dop_score = 1;

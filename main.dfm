@@ -20,12 +20,6 @@ object Form1: TForm1
   OnKeyUp = FormKeyUp
   PixelsPerInch = 96
   TextHeight = 13
-  object fon: TImage
-    Left = 136
-    Top = 152
-    Width = 49
-    Height = 49
-  end
   object Buffer: TImage
     Left = 0
     Top = 0
@@ -33,24 +27,30 @@ object Form1: TForm1
     Height = 500
     Align = alClient
     Visible = False
-    ExplicitLeft = 56
-    ExplicitTop = 48
+    ExplicitLeft = 80
+    ExplicitTop = 88
     ExplicitWidth = 46
     ExplicitHeight = 52
+  end
+  object fon: TImage
+    Left = 136
+    Top = 152
+    Width = 49
+    Height = 49
   end
   object MainMenu1: TMainMenu
     Left = 504
     Top = 72
     object start1: TMenuItem
-      Caption = #1057#1090#1072#1088#1090
+      Caption = 'Start'
       OnClick = start1Click
     end
     object pause1: TMenuItem
-      Caption = #1055#1072#1091#1079#1072
+      Caption = 'Pause'
       OnClick = pause1Click
     end
     object info1: TMenuItem
-      Caption = #1048#1085#1092#1086
+      Caption = 'Info'
       OnClick = info1Click
     end
     object N1: TMenuItem
